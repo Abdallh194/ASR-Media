@@ -1,0 +1,108 @@
+// bootstrab file
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); //bootstrab icons
+
+// assets file
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@486&display=swap"); //header font
+// font main
+// varibales
+$main-font: "Roboto", sans-serif;
+$header-font: "Assistant", sans-serif;
+
+// css styles files
+@import "Styles/Navbar";
+@import "Styles/homePage";
+@import "Styles/Videos";
+@import "Styles/Login";
+@import "Styles/UserProfile";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.category-btn:hover {
+  background-color: #fc1503 !important;
+  color: white !important;
+}
+
+.category-btn:hover span {
+  color: white !important;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+}
+
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 45vh !important;
+  }
+  .search-bar {
+    width: 200px;
+  }
+}

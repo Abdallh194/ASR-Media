@@ -1,0 +1,30 @@
+.homePage {
+  .sidebar {
+    height: 92vh;
+    border-right: 1px solid #3d3d3d;
+    padding: 20px;
+    width: calc(100% / 7);
+    .name {
+      font-size: 17px;
+    }
+  }
+  .feeds {
+    padding: 20px;
+    h4 {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .sidebar {
+      width: auto;
+      height: auto;
+      padding: 20px 10px;
+    }
+    .category-btn {
+      margin: 10px !important;
+    }
+    .headers {
+      text-align: center !important;
+    }
+  }
+}

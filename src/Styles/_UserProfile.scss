@@ -1,0 +1,42 @@
+.UserProfile {
+  margin-top: 80px;
+  .PersonalDetails {
+    width: 80%;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .logoutBtn {
+      position: absolute;
+      background-color: red;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .userName {
+      font-size: 41px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-family: $header-font;
+    }
+    .showDetails {
+      cursor: pointer;
+    }
+    .btn1 {
+      background-color: rgb(52, 52, 52);
+      margin-left: 15px;
+      margin-top: 10px;
+      padding: 7px 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      transform: 0.3s;
+      &:hover {
+        background-color: rgb(37, 37, 37);
+      }
+    }
+  }
+  .PersonalImage {
+    width: 20%;
+  }
+}
